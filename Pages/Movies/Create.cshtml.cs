@@ -12,11 +12,13 @@ namespace RazorPagesMovie.Pages.Movies
 {
     public class CreateModel : PageModel
     {
-        private readonly RazorPagesMovie.Data.RazorPagesMovieContext _context;
+        const bool flag =false;
 
+        private readonly RazorPagesMovie.Data.RazorPagesMovieContext _context;
         public CreateModel(RazorPagesMovie.Data.RazorPagesMovieContext context)
         {
             _context = context;
+            
         }
 
         public IActionResult OnGet()

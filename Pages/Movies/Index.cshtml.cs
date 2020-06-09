@@ -18,6 +18,7 @@ namespace RazorPagesMovie.Pages.Movies
         public IndexModel(RazorPagesMovie.Data.RazorPagesMovieContext context)
         {
             _context = context;
+
         }
 
         public IList<Movie> Movie { get; set; }
